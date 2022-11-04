@@ -1,0 +1,27 @@
+name = input("What your name?:")
+while len(name) <=3:
+    print("The name must be longer than 3 characters")
+    name = input("What your name?:")
+    
+age = int(input("What your age?:"))
+while age <= 0 or age >= 150:
+    print("Wrong age")
+    idade = int(input("What your age?"))
+
+salary = float(input("What your salary?:"))
+while salary <= 0:
+    print("Salary must be greater than 0")
+    salary = float(input("What your salary?:"))
+    
+
+genre = str(input("What your genre?: MALE, FEMALE, OR OTHER:"))
+while genre.upper() != 'MALE' and genre.upper() != 'FEMALE' and genre.upper() != 'OTHER':
+    print("Invalid Gender")
+    genre = str(input("What your genre? Male, Female, OR Other:"))
+    
+
+status = str(input("What your marital status?: Single, Married, Widoer or Divorced?:"))
+while status.upper() != "SINGLE" and status.upper() != "MARRIED" and status.upper() != "WIDOER" and status.upper() != "DIVORCED":
+    print(f"{status} is an invalid marital status")
+    status = str(input("What your marital status? Single, Married, Widoer or Divorced?:"))
+print("Complete registration!")
